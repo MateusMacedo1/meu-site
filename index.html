@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
     <title>Mateus Macedo \ Portfólio</title>
 </head>
@@ -12,20 +12,20 @@
         <div class="interface_box">
             <div class="interface">
             <div class="nome">
-                <a href="#">
+                <a href="#sobre">
                     <h2>Mateus Macedo</h2>
-                </a>
+                </a> 
             </div>
-            <nav class="desktop">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidade</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Projetos</a></li>
+            <nav class="tela">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#topo">Início</a></li>
+                    <li class="nav-item"><a href="#habilidades">habilidade</a></li>
+                    <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
             <div class="btn_contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
@@ -34,16 +34,14 @@
     </header>
 
     <main>
-        <section class="topo">
+        <section class="topo" id="topo">
             <div class="interface">
                 <div class="flex">
                     <div class="txt_topo">
-                        <h1>BEM-VINDO AO MEU <span>PORTIFÓLIO!</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Hic, sit quis? Necessitatibus veniam reprehenderit molestias dolorum praesentium et nostrum explicabo quo neque a,
-                            quaerat aliquam officiis culpa doloribus rem dolorem.</p>
+                        <h1>BEM-VINDO AO MEU <span>PORTFÓLIO!</span></h1>
+                        <p>Este é um espaço onde compartilho meus conhecimentos, habilidades e um pouco sobre mim. Fique à vontade para navegar e entrar em contato.</p>
                             <div class="btn_contato">
-                                <a href="#">
+                                <a href="#formulario">
                                     <button>Entre em contato!</button>
                                 </a>
                             </div>
@@ -54,25 +52,25 @@
                 </div>
             </div>
         </section>
-        <section class="especialidade">
+        <section class="habilidades" id="habilidades">
             <div class="interface">
-                <h2 class="title">MINHAS <span>ESPECIALIDADES</span></h2>
+                <h2 class="title">MINHAS <span>HABILIDADES</span></h2>
                 <div class="flex">
-                    <div class="especialidade_box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Website</h3>
+                    <div class="habilidade_box">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>PYTHON</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Aperiam nulla fugiat mollitia impedit quis nam, enim nihil neque, consequuntur, reprehenderit a laboriosam.
                             Labore illo dolorum temporibus velit necessitatibus enim perspiciatis.</p>
                     </div>
-                    <div class="especialidade_box">
+                    <div class="habilidade_box">
                         <i class="fa-solid fa-code"></i>
-                        <h3>Website</h3>
+                        <h3>Front</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Aperiam nulla fugiat mollitia impedit quis nam, enim nihil neque, consequuntur, reprehenderit a laboriosam.
                             Labore illo dolorum temporibus velit necessitatibus enim perspiciatis.</p>
                     </div>
-                    <div class="especialidade_box">
+                    <div class="habilidade_box">
                         <i class="fa-solid fa-code"></i>
                         <h3>Website</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -82,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img_sobre">
@@ -90,12 +88,8 @@
                     </div>
                     <div class="txt_sobre">
                         <h2>MUITO PRAZER, <span>SOU MATEUS MACEDO.</span></h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Modi quia qui corrupti, asperiores nobis maxime id dolore nulla quos minus exercitationem
-                            incidunt facere magni nesciunt assumenda quidem, eligendi commodi fugiat!</P>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Modi quia qui corrupti, asperiores nobis maxime id dolore nulla quos minus exercitationem
-                            incidunt facere magni nesciunt assumenda quidem, eligendi commodi fugiat!</P>
+                        <P>Olá, me chamo Mateus. Sou aluno do curso Técnico em Desenvolvimento e Análise de Sistemas pela Fábrica de Software do Hub Senac Academy. Tenho 25 anos e estou iniciando minha trajetória na área de Tecnologia da Informação.</P>
+                        <P>Tenho interesse em desenvolvimento de sistemas, com foco em desenvolvimento web e banco de dados. Possuo conhecimentos iniciais em HTML, CSS, lógica de programação e MySQL, e venho desenvolvendo projetos práticos para aplicar esses conhecimentos.</P>
                             <div class="btn_social">
                                 <a href="#"><button><i class="fa-brands fa-whatsapp"></i></button></a>
                                 <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
@@ -105,26 +99,26 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="#portfolio" id="Portfolio">
             <div class="interface">
                 <h2 class="title">MEU <span>PORTFÓLIO</span></h2>
                 <div class="flex">
                     <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Projeto 1</div>
+                        <div class="escurecer">Site Sushi Food</div>
                     </div>
                     <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Projeto 2</div>
+                        <div class="escurecer">Site Da Humburgueria</div>
 
                     </div>
                     <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                                <div class="escurecer">Projeto 3</div>
+                        <div class="escurecer">Projeto 3</div>
 
                     </div>
-
+                    
                 </div>
             </div>
         </section>
-        <section class="formulario">
+        <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="title">FALA <span>COMIGO!</span></h2>
                 <form action="">
