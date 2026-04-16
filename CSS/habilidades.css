@@ -1,0 +1,26 @@
+.habilidades{
+    padding: 80px 4%;
+}
+
+.habilidades .flex{
+    gap: 40px;
+    justify-content: center;
+}
+
+.habilidade_box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    transition: .2s;
+    margin: center;
+}
+
+.habilidade_box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-primary-4);
+}
+
+.habilidade_box i{
+    font-size: 60px;
+    color: var(--color-primary-4);
+}

@@ -1,0 +1,33 @@
+.topo{
+    padding: 120px 4% 40px;
+}
+
+.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.txt_topo h1{
+    color: white;
+    font-size: 42px;
+}
+
+.txt_topo span{
+    color: var(--color-primary-4);
+}
+
+.txt_topo p{
+    color: white;
+    margin: 40px 0;
+}
+
+.img_topo{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    from{ top: 0; }
+    to{ top: 30px; }
+}
