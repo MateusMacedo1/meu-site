@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Macedo | Portfólio</title>
+
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
-    <title>Mateus Macedo \ Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/index.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="interface_box">
-            <div class="interface">
+        <div class="interface">
             <div class="nome">
                 <a href="#sobre">
                     <h2>Mateus Macedo</h2>
-                </a> 
+                </a>
             </div>
+
             <nav class="tela">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#topo">Início</a></li>
-                    <li class="nav-item"><a href="#habilidades">habilidade</a></li>
+                    <li class="nav-item"><a href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
                     <li class="nav-item"><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
+
             <div class="btn_contato">
                 <a href="#formulario">
-                    <button>Contato</button>
+                    <button type="button">Contato</button>
                 </a>
             </div>
-            </div>
+
+            <button class="mobile-btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item"><a href="#topo">Início</a></li>
+                <li class="nav-item"><a href="#habilidades">Habilidades</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
+                <li class="nav-item"><a href="#portfolio">Projetos</a></li>
+            </ul>
         </div>
     </header>
 
@@ -40,99 +57,121 @@
                     <div class="txt_topo">
                         <h1>BEM-VINDO AO MEU <span>PORTFÓLIO!</span></h1>
                         <p>Este é um espaço onde compartilho meus conhecimentos, habilidades e um pouco sobre mim. Fique à vontade para navegar e entrar em contato.</p>
-                            <div class="btn_contato">
-                                <a href="#formulario">
-                                    <button>Entre em contato!</button>
-                                </a>
-                            </div>
+
+                        <div class="btn_contato">
+                            <a href="#formulario">
+                                <button type="button">Entre em contato!</button>
+                            </a>
+                        </div>
                     </div>
+
                     <div class="img_topo">
-                        <img src="img/eu.png" alt="">
+                        <img src="img/eu.png" alt="Foto de Mateus Macedo">
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="habilidades" id="habilidades">
             <div class="interface">
                 <h2 class="title">MINHAS <span>HABILIDADES</span></h2>
+
                 <div class="flex">
                     <div class="habilidade_box">
                         <i class="fa-brands fa-python"></i>
-                        <h3>PYTHON</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam nulla fugiat mollitia impedit quis nam, enim nihil neque, consequuntur, reprehenderit a laboriosam.
-                            Labore illo dolorum temporibus velit necessitatibus enim perspiciatis.</p>
+                        <h3>Python</h3>
+                        <p>Conhecimento inicial em Python, com foco em lógica de programação, estrutura de código e desenvolvimento de pequenos projetos práticos.</p>
                     </div>
+
                     <div class="habilidade_box">
                         <i class="fa-solid fa-code"></i>
-                        <h3>Front</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam nulla fugiat mollitia impedit quis nam, enim nihil neque, consequuntur, reprehenderit a laboriosam.
-                            Labore illo dolorum temporibus velit necessitatibus enim perspiciatis.</p>
+                        <h3>Front-end</h3>
+                        <p>Conhecimentos em HTML e CSS para criação de interfaces modernas, organizadas e responsivas, com foco em páginas web bem estruturadas.</p>
                     </div>
+
                     <div class="habilidade_box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Website</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Aperiam nulla fugiat mollitia impedit quis nam, enim nihil neque, consequuntur, reprehenderit a laboriosam.
-                            Labore illo dolorum temporibus velit necessitatibus enim perspiciatis.</p>
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>Fundamentos em modelagem e banco de dados, com estudos em MySQL e prática em comandos básicos para criação, consulta e organização de dados.</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img_sobre">
-                        <img src="img/eu.png" alt="">
+                        <img src="img/eu.png" alt="Foto de Mateus Macedo">
                     </div>
+
                     <div class="txt_sobre">
                         <h2>MUITO PRAZER, <span>SOU MATEUS MACEDO.</span></h2>
-                        <P>Olá, me chamo Mateus. Sou aluno do curso Técnico em Desenvolvimento e Análise de Sistemas pela Fábrica de Software do Hub Senac Academy. Tenho 25 anos e estou iniciando minha trajetória na área de Tecnologia da Informação.</P>
-                        <P>Tenho interesse em desenvolvimento de sistemas, com foco em desenvolvimento web e banco de dados. Possuo conhecimentos iniciais em HTML, CSS, lógica de programação e MySQL, e venho desenvolvendo projetos práticos para aplicar esses conhecimentos.</P>
-                            <div class="btn_social">
-                                <a href="#"><button><i class="fa-brands fa-whatsapp"></i></button></a>
-                                <a href="#"><button><i class="fa-brands fa-instagram"></i></button></a>
-                                <a href="#"><button><i class="fa-brands fa-linkedin-in"></i></button></a>
-                            </div>
+
+                        <p>Olá, me chamo Mateus. Sou aluno do curso Técnico em Desenvolvimento e Análise de Sistemas pela Fábrica de Software do Hub Senac Academy. Tenho 25 anos e estou iniciando minha trajetória na área de Tecnologia da Informação.</p>
+
+                        <p>Tenho interesse em desenvolvimento de sistemas, com foco em desenvolvimento web e banco de dados. Possuo conhecimentos iniciais em HTML, CSS, lógica de programação, Python e MySQL, e venho desenvolvendo projetos práticos para aplicar esses conhecimentos.</p>
+
+                        <div class="btn_social">
+                            <a href="#"><button type="button"><i class="fa-brands fa-whatsapp"></i></button></a>
+                            <a href="#"><button type="button"><i class="fa-brands fa-instagram"></i></button></a>
+                            <a href="#"><button type="button"><i class="fa-brands fa-linkedin-in"></i></button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="#portfolio" id="Portfolio">
+
+        <section class="portfolio" id="portfolio">
             <div class="interface">
                 <h2 class="title">MEU <span>PORTFÓLIO</span></h2>
+
                 <div class="flex">
                     <div class="img_rol" style="background-image: url(img/site_sushi.png);">
                         <div class="escurecer">Site Sushi Food</div>
                     </div>
-                    <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Site Da Humburgueria</div>
 
+                    <div class="img_rol" style="background-image: url(img/site_sushi.png);">
+                        <div class="escurecer">Site da Hamburgueria</div>
                     </div>
+
                     <div class="img_rol" style="background-image: url(img/site_sushi.png);">
                         <div class="escurecer">Projeto 3</div>
-
                     </div>
-                    
                 </div>
             </div>
         </section>
+
         <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="title">FALA <span>COMIGO!</span></h2>
+
                 <form action="">
                     <input type="text" placeholder="Seu nome completo:" required>
-                    <input type="text" placeholder="Seu e-mail:" required>
-                    <input type="text" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua Mensagem:" required></textarea>
+                    <input type="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" placeholder="Seu celular:">
+                    <textarea placeholder="Sua mensagem:" required></textarea>
+
                     <div class="btn_enviar">
                         <input type="submit" value="ENVIAR">
                     </div>
                 </form>
-
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-itens">
+            <span class="copyright">
+                &copy; 2026 Mateus Macedo
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

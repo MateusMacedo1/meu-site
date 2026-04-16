@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('index.html');
 @import url('menu.css');
 
 :root{
@@ -7,46 +6,44 @@
     --color-primary-2: #ffffff95;
     --color-primary-3: #ffffff;
     --color-primary-4: #0DCBFF;
-    --color-neutra-1: white;
-    --color-neutra-2: black;
+    --color-neutra-1: #ffffff;
+    --color-neutra-2: #000000;
 }
 
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Sans serif';
+    font-family: 'Roboto', sans-serif;
 }
 
-    
-body {
+html{
+    scroll-behavior: smooth;
+}
+
+body{
     background-color: var(--color-primary-1);
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
-body::before {
+body::before{
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/dev.gif);
+    inset: 0;
+    background-image: url(../img/ondas.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 15%;
+    opacity: 0.08;
     z-index: -1;
 }
-
 
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
-
-
 
 .flex{
     display: flex;
@@ -56,24 +53,10 @@ body::before {
     color: var(--color-primary-3);
     font-size: 38px;
     text-align: center;
-
 }
 
 .title span{
     color: var(--color-primary-4);
-}
-
-
-
-header{
-    padding: 40px 4%;
-}
-
-header .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
 a{
@@ -89,12 +72,39 @@ a:hover{
 }
 
 ul{
-    list-style-type: none;
+    list-style: none;
 }
 
-li{
-    display: inline-block;
-    padding: 0 40px;
+header{
+    width: 100%;
+    background-color: var(--color-primary-1);
+    padding: 28px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tela{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item a{
+    color: var(--color-primary-2);
+    font-weight: 600;
 }
 
 .btn_contato button{
@@ -105,14 +115,54 @@ li{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
 }
 
 .btn_contato button:hover{
-    box-shadow: 0px 0px 8px rgba(120, 192, 255, 0.448);
+    box-shadow: 0 0 8px rgba(120, 192, 255, 0.448);
+    transform: scale(1.05);
 }
 
-.inicio{
-    padding: 40px 4%;
+.mobile-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-primary-3);
+}
+
+.mobile-menu{
+    display: none;
+    background-color: var(--color-primary-1);
+    padding-bottom: 16px;
+}
+
+.mobile-menu.active{
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.mobile-nav-list .nav-item{
+    text-align: center;
+}
+
+main{
+    padding-top: 120px;
+}
+
+.topo{
+    padding: 40px 0;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
 }
 
 .topo .flex{
@@ -124,6 +174,7 @@ li{
 .txt_topo h1{
     color: var(--color-primary-3);
     font-size: 42px;
+    line-height: 1.2;
 }
 
 .txt_topo span{
@@ -133,9 +184,9 @@ li{
 
 .txt_topo p{
     color: var(--color-primary-3);
-    margin: 40px 0px;
+    margin: 40px 0;
+    max-width: 600px;
 }
-
 
 .img_topo{
     padding: 10px;
@@ -143,22 +194,30 @@ li{
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
+.img_topo img, .img_sobre img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 @keyframes flutuar{
-    0%{
+    from{
         top: 0;
     }
-    100%{
+    to{
         top: 30px;
     }
 }
 
-.habilidade{
-    padding: 40px 4%;
+.habilidades{
+    padding: 80px 0;
     margin-top: 60px;
-
 }
-.habilidade .flex{
-    gap: 60px;
+
+.habilidades .flex{
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .habilidade_box{
@@ -166,11 +225,14 @@ li{
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
+    transition: .2s;
+    max-width: 360px;
+    background-color: rgba(255, 255, 255, 0.03);
 }
+
 .habilidade_box:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px var(--color-primary-4);
-    transition: .2s;
+    box-shadow: 0 0 20px var(--color-primary-4);
 }
 
 .habilidade_box i{
@@ -180,11 +242,11 @@ li{
 
 .habilidade_box h3{
     font-size: 28px;
-    margin: 12px 0px;
+    margin: 12px 0;
 }
 
 .sobre{
-    padding: 80px 4%;
+    padding: 80px 0;
 }
 
 .sobre .flex{
@@ -198,7 +260,7 @@ li{
 
 .txt_sobre h2{
     font-size: 40px;
-    line-height: 40px;
+    line-height: 1.2;
     margin-bottom: 40px;
 }
 
@@ -208,7 +270,7 @@ li{
 }
 
 .txt_sobre p{
-    margin: 20px 0px;
+    margin: 20px 0;
     text-align: justify;
 }
 
@@ -220,17 +282,26 @@ li{
     background-color: var(--color-primary-4);
     font-size: 22px;
     cursor: pointer;
-    margin: 0px 10px;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.btn_social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(120, 192, 255, 0.448);
 }
 
 .portfolio{
-    padding: 80px 4%;
-    box-shadow: 0px 0px 40px 10px #ffffff25;
+    padding: 80px 0;
+    box-shadow: 0 0 40px 10px #ffffff25;
 }
+
 .portfolio .flex{
     justify-content: space-around;
     margin-top: 60px;
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .img_rol{
@@ -243,19 +314,16 @@ li{
     border-radius: 40px;
     position: relative;
     margin-top: 40px;
+    overflow: hidden;
 }
 
 .img_rol:hover{
     background-position: 100% 100%;
-
 }
 
 .escurecer{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: #000000bc;
     border-radius: 40px;
     display: flex;
@@ -266,29 +334,28 @@ li{
     color: #ffffff;
     opacity: 0;
     transition: .5s;
-
 }
 
 .escurecer:hover{
     opacity: 1;
 }
-.formulario{
-    padding: 80px 4%;
-    margin-top: 40px;
 
+.formulario{
+    padding: 80px 0;
+    margin-top: 40px;
 }
 
 form{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 40px;
 }
 
-form input, textarea{
+form input,
+form textarea{
     width: 100%;
     background-color: rgba(53, 53, 53, 0.796);
     border: 0;
@@ -301,23 +368,76 @@ form input, textarea{
 
 form textarea{
     resize: none;
-    max-height: 200px;
+    height: 180px;
 }
 
 form .btn_enviar{
-        margin-top: 20px;
-        text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 form .btn_enviar input{
     width: 120px;
     background-color: var(--color-primary-4);
-    color: black;
+    color: var(--color-neutra-2);
     font-weight: 700;
     cursor: pointer;
-    transition: 0.5s;
+    transition: .5s;
 }
+
 form .btn_enviar input:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 8px rgba(120, 192, 255, 0.448);
+    box-shadow: 0 0 8px rgba(120, 192, 255, 0.448);
+}
+
+footer{
+    background-color: var(--color-primary-1);
+}
+
+.footer-itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 8% 24px;
+}
+
+.copyright{
+    color: var(--color-primary-4);
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.social-media-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-buttons a{
+    font-size: 24px;
+    color: var(--color-primary-3);
+}
+
+@media screen and (max-width: 1170px){
+    .tela, .btn_contato{
+        display: none;
+    }
+
+    .mobile-btn{
+        display: block;
+    }
+
+    .topo .flex, .sobre .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .txt_sobre p{
+        text-align: center;
+    }
+
+    .habilidades .flex, .portfolio .flex{
+        flex-direction: column;
+    }
 }
