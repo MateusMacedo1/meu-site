@@ -16,8 +16,6 @@
     border-radius: 20px;
     transition: .2s;
     margin: center;
-    display: flex;
-    position: relative;
 }
 
 .habilidade_box:hover{
