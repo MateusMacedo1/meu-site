@@ -28,15 +28,5 @@
     height: 300px;
     object-fit: cover;
     position: relative;
-    animation: flutuar 3s ease-in-out infinite alternate;
     border-radius: 50%;
-}
-
-@keyframes flutuar {
-    from {
-        top: 0;
-    }
-    to {
-        top: 50px;
-    }
 }

@@ -26,7 +26,7 @@ body{
     margin: 0;
 }
 
-body::before{
+/* body::before{
     content: "";
     position: fixed;
     inset: 0;
@@ -35,7 +35,7 @@ body::before{
     background-position: center;
     opacity: 0.08;
     z-index: -1;
-}
+} */
 
 .interface{
     max-width: 1280px;

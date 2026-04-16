@@ -1,10 +1,13 @@
 .habilidades{
     padding: 80px 4%;
+    display: flex;
 }
 
 .habilidades .flex{
     gap: 40px;
     justify-content: center;
+    margin-top: 40px;
+    display: flex;
 }
 
 .habilidade_box{
@@ -13,6 +16,8 @@
     border-radius: 20px;
     transition: .2s;
     margin: center;
+    display: flex;
+    position: relative;
 }
 
 .habilidade_box:hover{
@@ -23,4 +28,6 @@
 .habilidade_box i{
     font-size: 60px;
     color: var(--color-primary-4);
+    display: flex;
+    margin-top: 10px;
 }
