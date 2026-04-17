@@ -2,14 +2,14 @@
     padding: 80px 4%;
 }
 
-.habilidades .titulo {
+.habilidades .title {
     text-align: center;
     font-size: 38px;
     color: white;
     margin-bottom: 40px;
 }
 
-.habilidades .titulo span {
+.habilidades .title span {
     color: var(--color-primary-4);
 }
 

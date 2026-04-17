@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JS/index.js" defer></script>
 </head>
@@ -15,25 +14,19 @@
     <header>
         <div class="interface">
             <div class="nome">
-                <a href="#sobre">
-                    <h2>Mateus Macedo</h2>
-                </a>
+                <h2>Mateus Macedo</h2>
             </div>
 
             <nav class="tela">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#topo">Início</a></li>
-                    <li class="nav-item"><a href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
-                    <li class="nav-item"><a href="#portfolio">Projetos</a></li>
+                    <li class="nav-item"><a href="#habilidades">Habilidades e Formação</a></li>
+                    <li class="nav-item"><a href="#portfolio">Meus Projetos</a></li>
+                    <li class="nav-item"><a href="#formulario">Fale Comigo</a></li>
+
                 </ul>
             </nav>
 
-            <div class="btn_contato">
-                <a href="#formulario">
-                    <button type="button">Contato</button>
-                </a>
-            </div>
 
             <button class="mobile-btn" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
@@ -43,9 +36,10 @@
         <div class="mobile-menu">
             <ul class="mobile-nav-list">
                 <li class="nav-item"><a href="#topo">Início</a></li>
-                <li class="nav-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="nav-item"><a href="#sobre">Sobre mim</a></li>
-                <li class="nav-item"><a href="#portfolio">Projetos</a></li>
+                <li class="nav-item"><a href="#habilidades">Habilidades e Formação</a></li>
+                <li class="nav-item"><a href="#portfolio">Meus Projetos</a></li>
+                <li class="nav-item"><a href="#formulario">Fale Comigo</a></li>
+
             </ul>
         </div>
     </header>
@@ -115,7 +109,7 @@
                     </div>
                     <div class="habilidade_box">
                         <i class="fa-solid fa-database"></i>
-                        <h3>Banco de Dados</h3>
+                        <h3>Técnico de Desenvolvimento e Análise de Sistemas</h3>
                         <p>Fundamentos em modelagem e banco de dados, com estudos em MySQL e prática em comandos básicos para criação, consulta e organização de dados.</p>
                     </div>
                     <div class="habilidade_box">
@@ -128,11 +122,7 @@
                         <h3>Photoshop</h3>
                         <p>Possuo experiência no uso do Adobe Photoshop para criação de peças visuais voltadas para redes sociais, incluindo posts, banners e materiais gráficos.</p>
                     </div>
-                    <div class="habilidade_box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Front-end</h3>
-                        <p>Conhecimentos em HTML e CSS para criação de interfaces modernas, organizadas e responsivas, com foco em páginas web bem estruturadas.</p>
-                    </div>
+
 
                 
 
@@ -151,33 +141,120 @@
             <div class="portfolio_card">
 
                 <div class="portfolio_img">
-                    <img src="img/site_sushi.png" alt="Projeto">
+                    <img src="img/sushi.PNG" alt="Projeto">
                 </div>
 
                 <div class="portfolio_info">
-                    <h3>Nome do Projeto</h3>
+                    <h3>Site do Sushi</h3>
 
                     <p>
-                        Descreva aqui o projeto, o objetivo dele e o que você utilizou.
+                        Site de apresentação para um restaurante de sushi, desenvolvido com HTML e CSS, com foco em layout moderno, organização de conteúdo e responsividade.
                     </p>
 
-                    <div class="portfolio_bottom">
-
-                        <div class="portfolio_tecnologias">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                        </div>
-
                         <div class="portfolio_btn">
-                            <a href="#" target="_blank">
+                            <a href="https://github.com/MateusMacedo1/site-sushi" target="_blank">
                                 <button>Ver projeto</button>
                             </a>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="portfolio_lista">
+
+            <div class="portfolio_card">
+
+                <div class="portfolio_img">
+                    <img src="img/quantum.PNG" alt="Projeto">
+                </div>
+
+                <div class="portfolio_info">
+                    <h3>Protótipo Sistema QuantumXP</h3>
+
+                    <p>
+                        Protótipo de sistema de computação quântica desenvolvido no Figma em grupo, com foco em design de interface e experiência do usuário.
+                    </p>
+
+                        <div class="portfolio_btn">
+                            <a href="https://www.figma.com/proto/snWP3gDnKlN2iWX0gNoMjj/QuantumXP?node-id=35-220&p=f&viewport=447%2C277%2C0.1&t=gsEHE2fvjhVxdYaz-1&scaling=contain&content-scaling=fixed&starting-point-node-id=35%3A220&page-id=0%3A1" target="_blank">
+                                <button>Ver projeto</button>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio_lista">
+
+            <div class="portfolio_card">
+
+                <div class="portfolio_img">
+                    <img src="img/parktec.PNG" alt="Projeto">
+                </div>
+
+                <div class="portfolio_info">
+                    <h3>Protótipo Sistema SGRTEC</h3>
+
+                    <p>
+                        Protótipo de sistema de gerenciamento para startups e mentores, desenvolvido para a empresa Parktec CG. O projeto foi criado no Figma em parceria com alunos do Senac Hub Academy, com foco em atender às necessidades do cliente por meio de uma interface funcional e organizada.
+                    </p>
+
+                        <div class="portfolio_btn">
+                            <a href="https://www.figma.com/proto/snWP3gDnKlN2iWX0gNoMjj/QuantumXP?node-id=35-220&p=f&viewport=447%2C277%2C0.1&t=gsEHE2fvjhVxdYaz-1&scaling=contain&content-scaling=fixed&starting-point-node-id=35%3A220&page-id=0%3A1" target="_blank">
+                                <button>Ver projeto</button>
+                            </a>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="portfolio_lista">
+
+            <div class="portfolio_card">
+
+                <div class="portfolio_img">
+                    <img src="img/hackaton-turismo.PNG" alt="Projeto">
+                </div>
+
+                <div class="portfolio_info">
+                    <h3>Participação Hackathon Turismo</h3>
+
+                    <p>
+                        Participação no Hackathon de Turismo do Senac, em equipe (Irutech), com foco na criação e desenvolvimento de uma solução para o setor de turismo. O projeto envolveu a prototipagem de um sistema no Figma, buscando atender a demandas reais com uma abordagem prática e colaborativa.
+                    </p>
+
+                        <div class="portfolio_btn">
+                            <a href="https://www.figma.com/proto/w50dlrtJVO0CuMvB7ujnzc/IruTech?node-id=280-1675&starting-point-node-id=196%3A785&scaling=contain&content-scaling=fixed" target="_blank">
+                                <button>Ver projeto</button>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="portfolio_lista">
+
+            <div class="portfolio_card">
+
+                <div class="portfolio_img">
+                    <img src="img/quantum.PNG" alt="Projeto">
+                </div>
+
+                <div class="portfolio_info">
+                    <h3>Protótipo Sistema QuantumXP</h3>
+
+                    <p>
+                        Protótipo de sistema de computação quântica desenvolvido no Figma em grupo, com foco em design de interface e experiência do usuário.
+                    </p>
+
+                        <div class="portfolio_btn">
+                            <a href="https://www.figma.com/proto/snWP3gDnKlN2iWX0gNoMjj/QuantumXP?node-id=35-220&p=f&viewport=447%2C277%2C0.1&t=gsEHE2fvjhVxdYaz-1&scaling=contain&content-scaling=fixed&starting-point-node-id=35%3A220&page-id=0%3A1" target="_blank">
+                                <button>Ver projeto</button>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
         </section>
 
