@@ -1,31 +1,72 @@
-.habilidades{
+.habilidades {
     padding: 80px 4%;
-    display: flex;
 }
 
-.habilidades .flex{
-    gap: 40px;
-    justify-content: center;
-    margin-top: 40px;
-    display: flex;
-}
-
-.habilidade_box{
+.habilidades .titulo {
+    text-align: center;
+    font-size: 38px;
     color: white;
-    padding: 40px;
-    border-radius: 20px;
-    transition: .2s;
-    margin: center;
+    margin-bottom: 40px;
 }
 
-.habilidade_box:hover{
-    transform: scale(1.05);
+.habilidades .titulo span {
+    color: var(--color-primary-4);
+}
+
+.habilidades .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.habilidade_box {
+    background-color: var(--color-primary-1);
+    color: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-align: center;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.habilidade_box:hover {
+    transform: translateY(-8px) scale(1.03);
     box-shadow: 0 0 20px var(--color-primary-4);
 }
 
-.habilidade_box i{
-    font-size: 60px;
+.habilidade_box i {
+    font-size: 48px;
     color: var(--color-primary-4);
-    display: flex;
-    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.habilidade_box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.habilidade_box p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .habilidades .flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades .flex {
+        grid-template-columns: 1fr;
+    }
 }
