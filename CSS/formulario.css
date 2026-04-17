@@ -1,6 +1,6 @@
 .formulario{
     padding: 80px 4%;
-    margin-top: 40px;
+    gap: 0px;
 }
 
 form{
@@ -17,7 +17,7 @@ form input, form textarea{
     border-radius: 15px;
     border: none;
     outline: none;
-    background: rgba(53, 53, 53, 0.796);
+    background: rgba(53, 53, 53, 0.49);
     color: white;
     font-size: 18px;
 }

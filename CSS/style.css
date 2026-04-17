@@ -77,11 +77,11 @@ header .interface{
     align-items: center;
 }
 
-.tela{
+.barra{
     display: flex;
 }
 
-.nav-list{
+.barra-superior{
     display: flex;
     gap: 48px;
 }
@@ -92,7 +92,7 @@ header .interface{
 }
 
 @media(max-width: 1170px){
-    .tela{
+    .barra{
         display: none;
     }
 
