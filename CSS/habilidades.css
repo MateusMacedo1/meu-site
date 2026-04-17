@@ -39,7 +39,7 @@
 }
 
 .habilidade_box i {
-    font-size: 48px;
+    font-size: 38px;
     color: var(--color-primary-4);
     display: block;
     margin-bottom: 10px;
@@ -47,6 +47,7 @@
 }
 
 .habilidade_box h3 {
+    gap: 20px;
     font-size: 24px;
     margin-bottom: 10px;
 }

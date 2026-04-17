@@ -18,14 +18,15 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 15px;
+
 }
 
 .portfolio_card {
     display: flex;
     background-color: var(--color-primary-1);
     border-radius: 20px;
+    border: 2px white;
     overflow: hidden;
-    transition: .3s;
 }
 
 .portfolio_card:hover {
