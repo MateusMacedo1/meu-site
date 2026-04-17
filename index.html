@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JS/index.js" defer></script>
 </head>
@@ -52,24 +52,50 @@
 
     <main>
         <section class="topo" id="topo">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt_topo">
-                        <h1>BEM-VINDO AO MEU <span>PORTFÓLIO!</span></h1>
-                        <p>Este é um espaço onde compartilho meus conhecimentos, habilidades e um pouco sobre mim. Fique à vontade para navegar e entrar em contato.</p>
+    <div class="interface">
+        <div class="flex">
 
-                        <div class="btn_contato">
-                            <a href="#formulario">
-                                <button type="button">Entre em contato!</button>
-                            </a>
-                        </div>
-                    </div>
+            <div class="txt_topo">
+                <h1>BEM-VINDO AO MEU <span>PORTFÓLIO!</span></h1>
 
-                    <div class="img_topo">
-                        <img src="img/ftoperfil.png" alt="">
-                    </div>
+                <p>
+                    Aluno do curso Técnico em Desenvolvimento e Análise de Sistemas pela
+                    Fábrica de Software do Hub Senac Academy. Tenho 25 anos e estou
+                    iniciando minha trajetória na área de Tecnologia da Informação.
+                </p>
+
+                <p>
+                    Tenho interesse em desenvolvimento de sistemas, com foco em
+                    desenvolvimento web e banco de dados. Possuo conhecimentos iniciais
+                    em HTML, CSS, lógica de programação, Python e MySQL, e venho
+                    desenvolvendo projetos práticos para aplicar esses conhecimentos.
+                </p>
+
+                <div class="btn_social">
+                    <a href="https://wa.me/5567982283273" target="_blank">
+                        <button type="button"><i class="fa-brands fa-whatsapp"></i></button>
+                    </a>
+
+                    <a href="https://www.instagram.com/de_maced/" target="_blank">
+                        <button type="button"><i class="fa-brands fa-instagram"></i></button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mateus-macedo-5667851a0/" target="_blank">
+                        <button type="button"><i class="fa-brands fa-linkedin-in"></i></button>
+                    </a>
+
+                    <a href="https://github.com/MateusMacedo1" target="_blank">
+                        <button type="button"><i class="fa-brands fa-github"></i></button>
+                    </a>
                 </div>
             </div>
+
+            <div class="img_topo">
+                <img src="img/ftoperfil.png" alt="Foto de perfil de Mateus">
+            </div>
+
+        </div>
+    </div>
         </section>
 
         <section class="habilidades" id="habilidades">
@@ -82,13 +108,11 @@
                         <h3>Python</h3>
                         <p>Conhecimento inicial em Python, com foco em lógica de programação, estrutura de código e desenvolvimento de pequenos projetos práticos.</p>
                     </div>
-
                     <div class="habilidade_box">
                         <i class="fa-solid fa-code"></i>
                         <h3>Front-end</h3>
                         <p>Conhecimentos em HTML e CSS para criação de interfaces modernas, organizadas e responsivas, com foco em páginas web bem estruturadas.</p>
                     </div>
-
                     <div class="habilidade_box">
                         <i class="fa-solid fa-database"></i>
                         <h3>Banco de Dados</h3>
@@ -104,7 +128,6 @@
                         <h3>Photoshop</h3>
                         <p>Possuo experiência no uso do Adobe Photoshop para criação de peças visuais voltadas para redes sociais, incluindo posts, banners e materiais gráficos.</p>
                     </div>
-
                     <div class="habilidade_box">
                         <i class="fa-solid fa-code"></i>
                         <h3>Front-end</h3>
@@ -117,50 +140,45 @@
             </div>
         </section>
 
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img_sobre">
-                        <img src="img/ftoperfil.png" alt="">
-                    </div>
 
-                    <div class="txt_sobre">
-                        <h2>MUITO PRAZER, <span>MATEUS MACEDO.</span></h2>
 
-                        <p>Aluno do curso Técnico em Desenvolvimento e Análise de Sistemas pela Fábrica de Software do Hub Senac Academy. Tenho 25 anos e estou iniciando minha trajetória na área de Tecnologia da Informação.</p>
+        <section class="portfolio" id="portfolio">
+    <div class="interface">
+        <h2 class="title">MEU <span>PORTFÓLIO</span></h2>
 
-                        <p>Tenho interesse em desenvolvimento de sistemas, com foco em desenvolvimento web e banco de dados. Possuo conhecimentos iniciais em HTML, CSS, lógica de programação, Python e MySQL, e venho desenvolvendo projetos práticos para aplicar esses conhecimentos.</p>
+        <div class="portfolio_lista">
 
-                        <div class="btn_social">
-                            <a href="https://wa.me/+5567982283273"><button type="button"><i class="fa-brands fa-whatsapp"></i></button></a>
-                            <a href="https://www.instagram.com/de_maced/" target="_blank"><button type="button"><i class="fa-brands fa-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/mateus-macedo-5667851a0/"><button type="button"><i class="fa-brands fa-linkedin-in"></i></button></a>
-                            <a href="https://github.com/MateusMacedo1"><button type="button"><i class="fa-brands fa-github"></i></button></a>
-                           
+            <div class="portfolio_card">
+
+                <div class="portfolio_img">
+                    <img src="img/site_sushi.png" alt="Projeto">
+                </div>
+
+                <div class="portfolio_info">
+                    <h3>Nome do Projeto</h3>
+
+                    <p>
+                        Descreva aqui o projeto, o objetivo dele e o que você utilizou.
+                    </p>
+
+                    <div class="portfolio_bottom">
+
+                        <div class="portfolio_tecnologias">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </div>
+
+                        <div class="portfolio_btn">
+                            <a href="#" target="_blank">
+                                <button>Ver projeto</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="interface">
-                <h2 class="title">MEU <span>PORTFÓLIO</span></h2>
-
-                <div class="flex">
-                    <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Site Sushi Food</div>
-                    </div>
-
-                    <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Site da Hamburgueria</div>
-                    </div>
-
-                    <div class="img_rol" style="background-image: url(img/site_sushi.png);">
-                        <div class="escurecer">Projeto 3</div>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
         </section>
 
         <section class="formulario" id="formulario">
