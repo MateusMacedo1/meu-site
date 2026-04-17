@@ -16,8 +16,7 @@
 .portfolio_lista {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 15px;
+    margin-top: 30px;
 
 }
 
@@ -25,12 +24,12 @@
     display: flex;
     background-color: var(--color-primary-1);
     border-radius: 20px;
-    border: 2px white;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .portfolio_card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.03);
     box-shadow: 0 0 20px var(--color-primary-4);
 }
 
