@@ -18,7 +18,7 @@ form input, form textarea{
     border: none;
     outline: none;
     background: rgba(53, 53, 53, 0.49);
-    color: white;
+    color: var(--color-primary-3);
     font-size: 18px;
 }
 

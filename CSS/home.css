@@ -83,13 +83,13 @@
     box-shadow: 0 0 10px var(--color-primary-4);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .home {
         padding: 120px 4% 60px;
     }
 
     .home .flex {
-        gap: 40px;
+        gap: 20px;
         text-align: center;
     }
 

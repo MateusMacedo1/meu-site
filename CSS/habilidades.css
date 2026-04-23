@@ -5,7 +5,7 @@
 .habilidades .title {
     text-align: center;
     font-size: 38px;
-    color: white;
+    color: var(--color-primary-3);
     margin-bottom: 40px;
 }
 
@@ -22,7 +22,7 @@
 
 .habilidade_box {
     background-color: var(--color-primary-1);
-    color: white;
+    color: var(--color-primary-3);
     padding: 30px 25px;
     border-radius: 20px;
     transition: 0.3s;
@@ -55,7 +55,7 @@
 .habilidade_box p {
     font-size: 15px;
     line-height: 1.5;
-    color: #d1d5db;
+    color: var(--color-primary-3);
 }
 
 
